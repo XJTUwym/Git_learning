@@ -6,7 +6,7 @@ message(STATUS "OpenCV_DIR = ${OpenCV_DIR}")
 message(STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}")
 message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
 
-set(EXECUTABLE_OUTPUT_PATH ../)#指定可执行程序的输出路径
+
 
 file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)#搜索src下的从cpp源文件
 
@@ -18,3 +18,4 @@ add_executable(app ${SRC} main.cpp)#确定需要编译的源文件和输出的�
 
  
 target_link_libraries(app ${OpenCV_LIBS})#链接系统库
+#这是一段更改
